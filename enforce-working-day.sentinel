@@ -1,0 +1,6 @@
+import "time"
+
+#is_weekday = rule { time.now.weekday_name not in ["Thursday", "Friday","Saturday", "Sunday"] }
+is_weekday = rule { time.now.weekday_name not in ["Saturday", "Sunday"] }
+is_open_hours = rule { time.now.hour > 9 and time.now.hour < 18 }
+main = rule { is_open_hours and is_weekday }
