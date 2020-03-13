@@ -1,6 +1,5 @@
 # This policy uses the Sentinel time import to check the excution time. 
 # The import uses Coordinated Universal Time (UTC).
-
 # To change the timezone to KST, do the follwoing.
 # time.now.hour+9
 
